@@ -1,5 +1,5 @@
 # Smart-Home
-Repository for the our IoT group:
+Repository for the our IoT group: \n
 Mehmet Ali Kurnaz
 Efe Demir
 Oskar Przybil
