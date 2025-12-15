@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 import random
 import time
 import json
@@ -12,13 +14,14 @@ from azure.storage.blob import BlobServiceClient
 
 # Load connection string from environment (App Service or local .env)
 connect_str = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+API_URL = "https://thermostatproject-bndcdmebfqbteagf.switzerlandnorth-01.azurewebsites.net/devices/thermo-001/telemetry"
 
 # Create client for Azure Blob Storage
 blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
 # CHANGE this to your real container name (Azure → Storage Account → Containers)
-container_name = "DefaultEndpointsProtocol=https;AccountName=oskartest123;AccountKey=KONiNsLeELthIEO8ZQ6I+kxzIv1LSoQ7/0RIbTGxlzrK3xeqnSslqgsTa8dA/LASbTe2dBHyvRDy+ASttawkIw==;EndpointSuffix=core.windows.net"
-container_client = blob_service_client.get_container_client(container_name)
+container_name = "telemetry"
+container_client = blob_service_client.get_container_client("telemetry")
 
 # -------------------------------
 #  MQTT CONFIG
@@ -142,4 +145,3 @@ while True:
     print(f"Saved telemetry to Azure Blob: {blob_name}")
 
     time.sleep(5)
-
