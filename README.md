@@ -22,3 +22,14 @@ It connects to the internet, reads real-time weather data (or sensor data), and 
 
 When it’s cold, the thermostat **levels up** to increase indoor temperature.  
 When it’s warm, it **levels down** to save energy.
+## REST API Documentation
+
+The Smart Thermostat REST API is documented using Swagger (OpenAPI).
+
+The API specification is available in this repository:
+- `openapi-unresolved.yaml`
+
+The API defines endpoints for:
+- Retrieving registered devices
+- Sending telemetry data from thermostats
+- Reading and updating thermostat configuration
