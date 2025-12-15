@@ -22,6 +22,23 @@ It connects to the internet, reads real-time weather data (or sensor data), and 
 
 When it’s cold, the thermostat **levels up** to increase indoor temperature.  
 When it’s warm, it **levels down** to save energy.
+
+## Data Storage Infrastructure
+
+Azure Blob Storage is used as the data storage solution for the Smart Thermostat system.
+
+The storage account stores:
+- Device telemetry data
+- Temperature history
+- System logs
+
+The infrastructure was created using Microsoft Azure and exported as an ARM template.
+The template files are located in:
+- infrastructure/blob-storage/
+
+This allows the storage infrastructure to be recreated automatically.
+
+
 ## REST API Documentation
 
 The Smart Thermostat REST API is documented using Swagger (OpenAPI).
