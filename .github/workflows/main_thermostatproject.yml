@@ -12,12 +12,10 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Create a ZIP package containing the contents of api-server (flat, no nested folder)
       - name: Create ZIP package
         run: |
           mkdir artifact
@@ -33,7 +31,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -41,7 +38,6 @@ jobs:
           name: python-app
           path: python-app
 
-      # Debug listing so we can see the structure
       - name: List contents for debugging
         run: ls -R .
 
@@ -58,4 +54,3 @@ jobs:
           app-name: thermostatproject
           package: python-app/app.zip
           clean: true
-
