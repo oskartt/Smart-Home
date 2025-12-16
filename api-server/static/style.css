@@ -1,46 +1,45 @@
 body {
     font-family: Arial, sans-serif;
+    background: #f2f2f2;
     margin: 0;
     padding: 0;
-    background: #efefef;
     text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
     color: #333;
 }
 
-.title {
-    margin-top: 40px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
 .card {
-    width: 380px;
-    margin: 40px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    width: 360px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: left;
 }
 
-h2 {
+.card h2 {
     text-align: center;
+    color: #444;
 }
 
 .adjuster {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    margin: 15px 0;
+    gap: 14px;
+    margin: 12px 0;
 }
 
 .adjuster button {
     width: 40px;
     height: 40px;
-    font-size: 22px;
-    background: #ddd;
+    font-size: 20px;
     border: none;
+    background: #ddd;
     border-radius: 8px;
     cursor: pointer;
 }
