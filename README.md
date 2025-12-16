@@ -23,7 +23,7 @@ It connects to the internet, reads real-time weather data (or sensor data), and 
 When it’s cold, the thermostat **levels up** to increase indoor temperature.  
 When it’s warm, it **levels down** to save energy.
 
-## Data Storage Infrastructure
+## Data Storage Infrastructure / Azure Blob Storage
 
 Azure Blob Storage is used as the data storage solution for the Smart Thermostat system.
 
@@ -50,3 +50,18 @@ The API defines endpoints for:
 - Retrieving registered devices
 - Sending telemetry data from thermostats
 - Reading and updating thermostat configuration
+
+
+## Frontend Dashboard
+
+We built a simple web‑based dashboard that allows users to view live telemetry from the thermostat and adjust the target temperature.
+The interface communicates directly with our REST API and updates every few seconds to show:
+
+- current temperature
+- humidity
+- pressure
+- heating/cooling status
+- target temperature
+
+Users can increase or decrease the target temperature using on‑screen controls, and the updated value is sent back to the device through the API.
+This provides a basic but functional demonstration of how a real smart‑home thermostat UI would work.
