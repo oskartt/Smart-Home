@@ -6,10 +6,10 @@ Smart Thermostat IoT System:
 An intelligent home thermostat that automatically increases its heating level when it’s cold outside and decreases it when it’s warm, maintaining comfort and optimizing energy use. 
 
 Members:
-- Mehmet Ali Kurnaz,  
-- Efe Demir,  
-- Oskar Przybyl,  
-- Yardiel Omar Lopez Estevez.
+- Mehmet Ali Kurnaz
+- Efe Demir
+- Oskar Przybyl
+- Yardiel Omar Lopez Estevez
 
 
 
