@@ -1,54 +1,50 @@
 body {
     font-family: Arial, sans-serif;
     background: #f2f2f2;
-    margin: 0;
-    padding: 0;
     text-align: center;
+    margin: 0;
 }
 
-h1 {
-    margin-top: 40px;
-    color: #333;
-}
-
-.card {
-    width: 360px;
-    margin: 30px auto;
+.card, .graph-card {
+    width: 420px;
+    margin: 25px auto;
+    background: white;
     padding: 20px;
-    background: #fff;
-    border-radius: 12px;
+    border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: left;
 }
 
-.card h2 {
-    text-align: center;
-    color: #444;
+.selector-box {
+    margin-top: 30px;
 }
 
 .adjuster {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 14px;
-    margin: 12px 0;
+    gap: 12px;
+    margin: 15px 0;
 }
 
 .adjuster button {
     width: 40px;
     height: 40px;
-    font-size: 20px;
-    border: none;
     background: #ddd;
     border-radius: 8px;
+    border: none;
     cursor: pointer;
 }
 
-.adjuster button:hover {
-    background: #ccc;
+.status-dot {
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
 }
 
-#adjustValue {
-    font-size: 20px;
-    font-weight: bold;
+.heating-on {
+    background: #ff4d4d;
+}
+
+.cooling-on {
+    background: #4da6ff;
 }
