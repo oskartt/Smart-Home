@@ -2,73 +2,56 @@ body {
     font-family: "Inter", Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f2f2f2;
     text-align: center;
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    height: 100vh;
-    color: #fff;
+    color: #333;
 }
 
 .title {
     margin-top: 40px;
-    font-size: 36px;
-    animation: fadeIn 1.2s ease;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .card {
     width: 380px;
     margin: 40px auto;
     padding: 25px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     text-align: left;
-    animation: slideUp 0.7s ease;
 }
 
-.card h2 {
+h2 {
     text-align: center;
-    color: #fff;
+    color: #333;
 }
 
-.icon {
-    vertical-align: middle;
-    margin-right: 6px;
+.adjuster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    gap: 12px;
 }
 
-/* Heating / Cooling dots */
-.dot {
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    margin-right: 6px;
+.adjuster button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border: none;
+    background: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-.on {
-    background-color: #4CAF50;
-    animation: pulse 1.5s infinite;
+.adjuster button:hover {
+    background: #ccc;
 }
 
-.off {
-    background-color: #d9534f;
-}
-
-/* Animations */
-@keyframes slideUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to   { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.3); opacity: 0.6; }
-    100% { transform: scale(1); opacity: 1; }
+#adjustValue {
+    font-size: 20px;
+    font-weight: bold;
 }
