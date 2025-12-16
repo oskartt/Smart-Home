@@ -53,5 +53,6 @@ jobs:
       uses: azure/webapps-deploy@v3
       with:
         app-name: thermostatproject
-        package: python-app
+        package: python-app/**
         clean: true
+
