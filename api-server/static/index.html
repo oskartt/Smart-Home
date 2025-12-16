@@ -4,50 +4,36 @@
     <meta charset="UTF-8">
     <title>Smart Thermostat Dashboard</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Icons from Icons8 (free + fast) -->
-    <link rel="icon" href="https://img.icons8.com/emoji/48/thermometer-emoji.png">
 </head>
 <body>
 
-<h1 class="title">🌡️ Smart Thermostat Dashboard</h1>
+<h1 class="title">Smart Thermostat Dashboard</h1>
 
 <div class="card">
     <h2>Live Telemetry</h2>
 
     <p><strong>Device:</strong> thermo-001</p>
 
-    <p>
-        <strong><img class="icon" src="https://img.icons8.com/fluency/24/temperature.png"> Current Temperature:</strong>
+    <p><strong>Current Temperature:</strong>
         <span id="temp">--</span> °C
     </p>
 
-    <p>
-        <strong><img class="icon" src="https://img.icons8.com/fluency/24/temperature-sensitive.png"> Target Temperature:</strong>
+    <p><strong>Target Temperature:</strong>
         <span id="target">--</span> °C
     </p>
 
-    <p>
-        <strong><img class="icon" src="https://img.icons8.com/fluency/24/hygrometer.png"> Humidity:</strong>
-        <span id="hum">--</span>%
-    </p>
+    <!-- Adjustable target temperature -->
+    <div class="adjuster">
+        <button id="minusBtn">−</button>
+        <span id="adjustValue">--</span> °C
+        <button id="plusBtn">+</button>
+    </div>
 
-    <p>
-        <strong><img class="icon" src="https://img.icons8.com/fluency/24/barometer-gauge.png"> Pressure:</strong>
-        <span id="press">--</span> hPa
-    </p>
+    <p><strong>Humidity:</strong> <span id="hum">--</span>%</p>
+    <p><strong>Pressure:</strong> <span id="press">--</span> hPa</p>
 
-    <p>
-        <strong>Heating:</strong>
-        <span class="dot off" id="heat-dot"></span>
-        <span id="heat">--</span>
-    </p>
-
-    <p>
-        <strong>Cooling:</strong>
-        <span class="dot off" id="cool-dot"></span>
-        <span id="cool">--</span>
-    </p>
+    <p><strong>Heating:</strong> <span id="heat">--</span></p>
+    <p><strong>Cooling:</strong> <span id="cool">--</span></p>
 </div>
 
 <script src="script.js"></script>
