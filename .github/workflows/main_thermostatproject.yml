@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir artifact
           cd api-server
-          zip -r ../artifact/app.zip * .[!.]*
+          zip -r ../artifact/app.zip .
 
       - name: Upload deployment artifact
         uses: actions/upload-artifact@v4
@@ -58,3 +58,4 @@ jobs:
           app-name: thermostatproject
           package: python-app/app.zip
           clean: true
+
